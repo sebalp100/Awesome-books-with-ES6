@@ -1,4 +1,4 @@
-export class Data {
+export default class Data {
   static getLocalStorage() {
     let allBooks;
     if (localStorage.getItem('allBooks') === null) {

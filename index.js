@@ -1,8 +1,8 @@
-import { Book } from '/modules/books.js';
+import Book from '../modules/books.js';
 
-import { Data } from '/modules/data.js';
+import Data from '../modules/data.js';
 
-import { Actions } from '/modules/actions.js';
+import Actions from '../modules/actions.js';
 
 document.addEventListener('DOMContentLoaded', Actions.display);
 

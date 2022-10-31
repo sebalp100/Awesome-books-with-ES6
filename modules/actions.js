@@ -10,7 +10,7 @@ class Data {
   }
 }
 
-export class Actions {
+export default class Actions {
   static display() {
     const books = Data.getLocalStorage();
 
