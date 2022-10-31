@@ -4,7 +4,7 @@ import Data from '../modules/data.js';
 
 import Actions from '../modules/actions.js';
 
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import { DateTime } from '../modules/luxon.js';
 
 const date = DateTime.now();
 

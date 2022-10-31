@@ -23,5 +23,5 @@
       }
     ]
   },
-  "ignorePatterns": ["dist/", "build/"]
+  "ignorePatterns": ["dist/", "build/", "modules/luxon.js"]
 }
