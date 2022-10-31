@@ -4,6 +4,14 @@ import Data from '../modules/data.js';
 
 import Actions from '../modules/actions.js';
 
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
+
+const date = DateTime.now();
+
+const dateMed = date.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+
+document.getElementById('date').innerHTML = dateMed;
+
 document.addEventListener('DOMContentLoaded', Actions.display);
 
 document.querySelector('#add').addEventListener('click', (e) => {
@@ -47,3 +55,5 @@ document.querySelector('#contact').addEventListener('click', () => {
   title.classList = 'active';
   contact.classList = ('active');
 });
+
+/* eslint import/no-unresolved: [2, { ignore: ['\\.js$'] }] */
