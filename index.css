@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.nav-bar-top {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 8px 10px;
+  margin: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  transform: scale(1.2);
+  color: cadetblue;
+}
+
+#addNew.active {
+  color: cadetblue;
+}
+
+#list.active {
+  color: cadetblue;
+}
+
+#contact.active {
+  color: cadetblue;
+}
+
+.line {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+}
+
+#date {
+  display: flex;
+  margin-right: 5px;
+  justify-content: flex-end;
+}
+
+.newBook h1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#titleSection h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#titleSection.active {
+  display: none;
+}
+
+#newBooks {
+  margin: 5px;
+}
+
+#newBooks.active {
+  display: none;
+}
+
+.newBook,
+#books-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#books {
+  display: none;
+}
+
+#books.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 180px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+#add {
+  width: 50px;
+  box-shadow: 3px 3px black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+}
+
+.remove {
+  width: 70px;
+  float: right;
+  margin-right: 2%;
+  position: absolute;
+  right: 0;
+  box-shadow: 3px 3px black;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+tr {
+  display: flex;
+  gap: 10px;
+  padding: 7px 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e4e4e4;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+.bookHr {
+  box-sizing: border-box;
+  border: 1px solid #0d151e;
+  width: 100px;
+  height: 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#contactSection {
+  display: none;
+}
+
+#contactSection h1 {
+  margin-bottom: 40px;
+}
+
+#contactSection p {
+  margin-bottom: 20px;
+}
+
+#contactSection.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+ul li {
+  list-style: disc;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 8px 10px;
+  margin: 0.5%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 99%;
+}
+
+@media only screen and (min-width: 768px) {
+  input {
+    width: 250px;
+    padding: 5px;
+    border: 2px solid black;
+  }
+}
